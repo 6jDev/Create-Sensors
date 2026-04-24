@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    " A ",
+    "ABA",
+    " A "
+  ],
+  "key": {
+    "A": { "item": "minecraft:tnt" },
+    "B": { "item": "createsensors:impact_sensor" }
+  },
+  "result": {
+    "id": "createsensors:impact_fuze",
+    "count": 1
+  }
+}

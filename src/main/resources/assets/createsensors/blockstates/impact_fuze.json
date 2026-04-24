@@ -1,0 +1,10 @@
+{
+  "variants": {
+    "facing=north": { "model": "createsensors:block/impact_fuze" },
+    "facing=south": { "model": "createsensors:block/impact_fuze", "y": 180 },
+    "facing=east":  { "model": "createsensors:block/impact_fuze", "y": 90 },
+    "facing=west":  { "model": "createsensors:block/impact_fuze", "y": 270 },
+    "facing=up":    { "model": "createsensors:block/impact_fuze", "x": 270 },
+    "facing=down":  { "model": "createsensors:block/impact_fuze", "x": 90 }
+  }
+}
