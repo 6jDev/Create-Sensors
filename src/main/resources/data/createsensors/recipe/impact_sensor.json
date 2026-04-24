@@ -11,7 +11,7 @@
     "C": { "item": "create:andesite_casing" }
   },
   "result": {
-    "id": "createcreatesensors:impact_sensor",
+    "id": "createsensors:impact_sensor",
     "count": 1
   }
 }
