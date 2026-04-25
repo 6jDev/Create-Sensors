@@ -5,6 +5,6 @@
     "block.createsensors.proximity_sensor": "Proximity Sensor",
 
 	"block.createsensors.impact_sensor.tooltip.summary": "Fires a _redstone signal_ when rapid deceleration is detected.",
-	"block.createsensors.impact_fuze.tooltip.summary": "_Detonates_ when rapid deceleration is detected.",
+	"block.createsensors.impact_fuze.tooltip.summary": "_Detonates_ when rapid deceleration is detected. Requires a _redstone signal_ to be armed.",
 	"block.createsensors.proximity_sensor.tooltip.summary": "Fires a _redstone signal_ when a contraption enters within the sensor's range."
 }

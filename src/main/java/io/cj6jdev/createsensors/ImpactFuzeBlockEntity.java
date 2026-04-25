@@ -68,8 +68,13 @@ public class ImpactFuzeBlockEntity extends SmartBlockEntity {
 
         Vec3 currentVelocity = currentPos.subtract(be.lastPos);
         double decel = be.lastVelocity.length() - currentVelocity.length();
-
         double thresholdValue = be.threshold.getValue() / 10.0;
+
+        if (!level.hasNeighborSignal(pos)) {
+            be.lastPos = currentPos;
+            be.lastVelocity = currentVelocity;
+            return;
+        }
 
         if (decel >= thresholdValue) {
             level.explode(
@@ -80,6 +85,9 @@ public class ImpactFuzeBlockEntity extends SmartBlockEntity {
                     6.0f,
                     Level.ExplosionInteraction.TNT
             );
+            // Remove the block after exploding so it doesn't keep triggering
+            level.removeBlock(pos, false);
+            return;
         }
 
         be.lastPos = currentPos;
